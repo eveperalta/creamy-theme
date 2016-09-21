@@ -1,0 +1,64 @@
+.barra{
+	background-color:#D50343;
+	font-family: 'Merriweather';
+	font-size: 20px;
+}
+.navbar-default{
+	margin-bottom: 0px;
+}
+.fondo{
+	background-image: url(../img/creamy.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 500px;	
+}
+.banner{
+	padding-top: 150px;
+	color: #D50343;
+	background-color: rgba(0, 0, 0, 0.7);
+	height: 500px;
+}
+.helado{
+	background-color: #FBF2B2;
+	height: auto;
+}
+.texto{
+	padding-top: 40px;
+	padding-left: 60px;
+	text-align: center;
+	color:#D50343; 
+	font-family: 'Merriweather';
+}
+.smaller-image{
+	width: 100%;
+	height: auto;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+.helado2{
+	background-color: #D50343;
+	height: auto;
+}
+.texto2{
+	padding: 40px;
+	text-align: center;
+	color:#FBF2B2; 
+	font-family: 'Merriweather';
+}
+.icono{
+	font-size: 60px;
+}
+.tag{
+	margin-left: -20px;
+	padding-bottom: 10px;
+}
+.pie{
+	background-color: #D50343;
+	height: 40px;
+	color: #FBF2B2;
+}
+h1, h2{
+	font-family: 'Indie Flower', cursive;
+}
