@@ -1,3 +1,4 @@
+
 .barra{
 	background-color:#D50343;
 	font-family: 'Merriweather';
@@ -16,7 +17,7 @@
 .banner{
 	padding-top: 150px;
 	color: #D50343;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(0, 0, 0, 0.5);
 	height: 500px;
 }
 .helado{
@@ -44,7 +45,7 @@
 .texto2{
 	padding: 40px;
 	text-align: center;
-	color:#FBF2B2; 
+	color:#FAFC70; 
 	font-family: 'Merriweather';
 }
 .icono{
@@ -59,6 +60,15 @@
 	height: 40px;
 	color: #FBF2B2;
 }
-h1, h2{
+h1, h4{
+	font-family: 'Indie Flower', cursive;
+	font-size: 48px;
+	color:#FAFC70; 
+}
+nav.navbar ul.nav li{
+	color:#FBF2B2; 
 	font-family: 'Indie Flower', cursive;
 }
+h2{
+	font-family: 'Indie Flower', cursive;
+	}
