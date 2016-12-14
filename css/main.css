@@ -19,6 +19,7 @@
 	color: #D50343;
 	background-color: rgba(0, 0, 0, 0.5);
 	height: 500px;
+	width: 100%;
 }
 .helado{
 	background-color: #FBF2B2;
@@ -26,7 +27,14 @@
 }
 .texto{
 	padding-top: 40px;
-	padding-left: 60px;
+	padding-left: 15px;
+	text-align: center;
+	color:#D50343; 
+	font-family: 'Merriweather';
+}
+.texto1{
+	padding-top: 40px;
+	padding-left: 40px;
 	text-align: center;
 	color:#D50343; 
 	font-family: 'Merriweather';
@@ -72,3 +80,38 @@ nav.navbar ul.nav li{
 h2{
 	font-family: 'Indie Flower', cursive;
 	}
+
+/*boton sroll to top*/
+.back-to-top {
+ 
+background: #D50343;
+ 
+margin: 0;
+ 
+position: fixed;
+ 
+bottom: 0;
+ 
+right: 0;
+ 
+width: 40px;
+ 
+height: 30px;
+ 
+z-index: 100;
+ 
+display: none;
+ 
+text-decoration: none;
+ 
+color:#FBF2B2 ;
+ 
+}
+ 
+  
+ 
+.back-to-top i {
+ 
+  font-size: 20px;
+  color: #FBF2B2;
+}

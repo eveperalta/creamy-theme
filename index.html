@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Creamy Theme</title>
   <script  src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
 
@@ -13,6 +14,7 @@
   <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
+  
 
 </head>
 <body>
@@ -26,19 +28,23 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Creamy Theme</a>
+                    <a class="navbar-brand" href="#creamy">Creamy Theme</a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                       <li><a href="#">How to</a></li>
-                        <li><a href="#">Beauty</a></li>
-                        <li><a href="#">Contact</a></li>
+                       <li><a href="#howto">How to</a></li>
+                        <li><a href="#beauty">Beauty</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
+                <!--testing the scroll to top button -->
+                <a href="#creamy" class="back-to-top" style="display: inline;">
+					<i class="fa fa-arrow-circle-up" ></i> 
+				</a>
             </div><!-- /.container-fluid -->
         </nav>
 </header>
-<section class="fondo">
+<section class="fondo" id="creamy">
 	<div class="row">
 		<div class="col-md-12 col-xs-12 banner">
 			<h1 class="text-center">Creamy Theme</h1>
@@ -46,7 +52,7 @@
 		</div>
 	</div>
 </section>
-<section class="helado">
+<section class="helado" id="howto">
   <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-5 col-xs-12 texto">
@@ -59,7 +65,7 @@
 	 </div>
   </div>
 </section>
-<section class="helado2">
+<section class="helado2" id="beauty">
   <div class="container-fluid ">
 	<div class="row">
 		<div class="col-md-12 col-xs-12  texto2">
@@ -69,20 +75,20 @@
 	</div>
 	</div>
 </section>
-<section class="helado">
-  <div class="container-fluid">
+<section class="helado" id="contact">
+  <div class="container-fluid" >
 	<div class="row">
 		<div class="col-md-4 col-xs-12 texto ">
 			<i class="fa fa-desktop icono" aria-hidden="true"></i>
 			<h2 class="text-center">Desktop</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet eros ex, vel consectetur dolor pretium ut. Fusce ut lorem risus. Phasellus consequat erat quis quam feugiat efficitur. </p>
 		</div>
-		<div class="col-md-4 col-xs-12 texto tag">
+		<div class="col-md-4 col-xs-12 texto1 tag">
 			<i class="fa fa-tag icono" aria-hidden="true"></i>
 			<h2 class="text-center">Tags</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet eros ex, vel consectetur dolor pretium ut. Fusce ut lorem risus. Phasellus consequat erat quis quam feugiat efficitur.</p>
 		</div>
-		<div class="col-md-4 col-xs-12 texto tag">
+		<div class="col-md-4 col-xs-12 texto1 tag">
 			<i class="fa fa-heart icono" aria-hidden="true"></i>
 			<h2 class="text-center">Love</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet eros ex, vel consectetur dolor pretium ut. Fusce ut lorem risus. Phasellus consequat erat quis quam feugiat efficitur.</p>
@@ -97,5 +103,42 @@
 		</div>
 	</div>
 </footer>
+<script>
+ 
+jQuery(document).ready(function() {
+ 
+var offset = 250;
+ 
+var duration = 300;
+ 
+jQuery(window).scroll(function() {
+ 
+if (jQuery(this).scrollTop() > offset) {
+ 
+jQuery(‘.back-to-top’).fadeIn(duration);
+ 
+} else {
+ 
+jQuery(‘.back-to-top’).fadeOut(duration);
+ 
+}
+ 
+});
+ 
+ 
+ 
+jQuery(‘.back-to-top’).click(function(event) {
+ 
+event.preventDefault();
+ 
+jQuery(‘html, body’).animate({scrollTop: 0}, duration);
+ 
+return false;
+ 
+})
+ 
+});
+ 
+</script>
 </body>
 </html>
